@@ -1,0 +1,28 @@
+@import "./common.scss";
+@import "./mixins/index.scss";
+
+html,
+body,
+p,
+div,
+section,
+nav,
+li,
+ol,
+ul,
+a,
+span,
+input {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: $c-main;
+  @include transition;
+  &:hover {
+    color: $c-second;
+  }
+}

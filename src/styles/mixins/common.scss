@@ -1,0 +1,94 @@
+@mixin flex(
+  $justify-content: flex-start,
+  $align-item: flex-start,
+  $direction: row,
+  $wrap: nowrap
+) {
+  display: flex;
+  justify-content: $justify-content;
+  align-items: $align-item;
+  flex-direction: $direction;
+  flex-wrap: $wrap;
+}
+
+@mixin inline-flex(
+  $justify-content: flex-start,
+  $align-item: flex-start,
+  $direction: row,
+  $wrap: nowrap
+) {
+  display: inline-flex;
+  justify-content: $justify-content;
+  align-items: $align-item;
+  flex-direction: $direction;
+  flex-wrap: $wrap;
+}
+
+@mixin text-overflow($line: 1) {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: $line;
+  word-break: break-all;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  @if $line > 1 {
+    word-break: break-all;
+  }
+}
+
+@mixin text-with-left-sign(
+  $type: rect,
+  $width: 8rpx,
+  $height: 32rpx,
+  $bg: $background-main-red
+) {
+  & {
+    padding-left: 20rpx + $width;
+    position: relative;
+    @if $type == rect {
+      &::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 50%;
+        margin-top: -$height / 2;
+        width: $width;
+        height: $height;
+        display: block;
+        background-color: $bg;
+      }
+    } @else if $type == dot {
+      @warn "variables $width,$height,$bg will not take effect when $type equals rect";
+      &::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 18rpx;
+        margin-top: -4rpx;
+        width: 8rpx;
+        height: 8rpx;
+        display: block;
+        background-color: #747474;
+        border-radius: 4rpx;
+      }
+    }
+  }
+}
+
+@mixin ellipsis {
+  white-space: normal;
+  word-wrap: break-word;
+  word-break: break-all;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+@mixin ellipsis-mult($lines: 1) {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: $lines;
+  word-break: break-all;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+

@@ -1,0 +1,5 @@
+@mixin transition($attr:all,$duration:.3s,$animation-type:linear,$delay:0s){
+  &{
+    transition: $attr $duration $animation-type $delay;
+  }
+}
