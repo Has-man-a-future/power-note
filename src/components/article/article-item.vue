@@ -22,22 +22,22 @@
 </template>
 
 <script setup lang="ts">
-import { reactive } from "vue";
-import LabelIndex from "@components/common/label/label-index.vue";
-import { useRouter } from "vue-router";
+import { reactive } from 'vue';
+import LabelIndex from '@components/common/label/label-index.vue';
+import { useRouter } from 'vue-router';
 const router = useRouter();
 
 const article = reactive({
-  title: "About Power Note - How to use power note?",
-  created_at: "2022-12-13 10:54:00",
+  title: 'About Power Note - How to use power note?',
+  created_at: '2022-12-13 10:54:00',
   tags: [
     {
-      id: "0001",
-      name: "入门",
+      id: '0001',
+      name: '入门',
     },
   ],
   description:
-    "This Note tell you how to use power note in your work job or study .....",
+    'This Note tell you how to use power note in your work job or study .....',
 });
 
 const toLabel = (lableId: string) => {

@@ -5,18 +5,18 @@
 </template>
 
 <script setup lang="ts">
-import LabelNormal from "./label-normal.vue";
-import LabelToDo from "./label-todo.vue";
+import LabelNormal from './label-normal.vue';
+import LabelToDo from './label-todo.vue';
 
 const props = withDefaults(
   defineProps<{
     type?: string;
   }>(),
   {
-    type: "normal",
+    type: 'normal',
   }
 );
-const component = props.type === "normal" ? LabelNormal : LabelToDo;
+const component = props.type === 'normal' ? LabelNormal : LabelToDo;
 </script>
 
 <style lang="scss" scoped>
