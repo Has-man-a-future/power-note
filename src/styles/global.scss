@@ -1,21 +1,19 @@
 @import "./common.scss";
 @import "./mixins/index.scss";
+@import "./iconfont/index.scss";
 
-html,
-body,
-p,
-div,
-section,
-nav,
-li,
-ol,
-ul,
-a,
-span,
-input {
-  margin: 0;
-  padding: 0;
+* {
   box-sizing: border-box;
+  margin: 0;
+}
+
+html{
+  font-size: 10px;
+}
+
+html,body{
+  padding: 0;
+  margin: 0;
 }
 
 a {
