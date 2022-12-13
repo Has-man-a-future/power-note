@@ -9,11 +9,6 @@ declare module "@vue/runtime-core" {
   export interface GlobalComponents {
     ArticleItem: typeof import("./src/components/article/article-item.vue")["default"];
     ElTag: typeof import("element-plus/es")["ElTag"];
-    IconCommunity: typeof import("./src/components/icons/IconCommunity.vue")["default"];
-    IconDocumentation: typeof import("./src/components/icons/IconDocumentation.vue")["default"];
-    IconEcosystem: typeof import("./src/components/icons/IconEcosystem.vue")["default"];
-    IconSupport: typeof import("./src/components/icons/IconSupport.vue")["default"];
-    IconTooling: typeof import("./src/components/icons/IconTooling.vue")["default"];
     Index: typeof import("./src/components/common/label/Index.vue")["default"];
     Label: typeof import("./src/components/common/label/index.vue")["default"];
     LabelIndex: typeof import("./src/components/common/label/label-index.vue")["default"];
