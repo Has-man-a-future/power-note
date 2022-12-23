@@ -1,7 +1,7 @@
 {
   "baseDir": "./",
-  "componentBasePath": "src/components/global",
-  "viewBasePath": "src/pages",
-  "sroreBasePath": "src/pinia",
-  "routesFilePath":"src/router/index.js"
+  "componentBasePath": "src/components",
+  "viewBasePath": "src/views",
+  "sroreBasePath": "src/stores",
+  "routesFilePath": "src/router/index.ts"
 }
