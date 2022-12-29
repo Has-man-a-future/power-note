@@ -3,5 +3,5 @@
   "componentBasePath": "src/components",
   "viewBasePath": "src/views",
   "sroreBasePath": "src/stores",
-  "routesFilePath": "src/router/index.ts"
+  "routesFilePath": "src/router/index.js"
 }
